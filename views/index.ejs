@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <h1>Gems index page</h1>
+    <ul>
+      <% for(let i = 0; i < allGems.length; i++) { %>
+      <li>
+        <a href="/gems/<%=i%>"><%=allGems[i].name %></a>
+      </li>
+      <% } %>
+    </ul>
+    <a href="/gems">Back to Index</a>
+  </body>
+
+</html>
